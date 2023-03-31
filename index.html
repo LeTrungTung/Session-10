@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let nhapSo = +prompt("Nhap so kiem tra:");
+      //   if (nhapSo % 2 == 0) {
+      //     console.log(nhapSo + " is a even number");
+      //   } else {
+      //     console.log(nhapSo + " is a odd number");
+      //   }
+      //   let nhapSo = +prompt("Nhap so kiem tra:");
+      //   const isEven = nhapSo % 2 == 0;
+      //   //   console.log("check is even", isEven);
+      //   if (isEven) {
+      //     alert("So " + nhapSo + " la so chan");
+      //   } else {
+      //     alert("So " + nhapSo + " la so le");
+      //   }
+      let nhapMonAn = prompt(
+        "Nhập món ăn Hủ tiếu hoặc Mì Quảng",
+        "Hủ tiếu"
+      );
+      if (nhapMonAn == "Hủ tiếu") {
+        let loaiHutieu = prompt(
+          "Nhập loại Hủ tiếu là Bò hoặc Gà",
+          "Bò"
+        );
+        if (loaiHutieu == "Bò") {
+          console.log("Giá Hủ tiếu bò: 15K");
+        }
+        if (loaiHutieu == "Gà") {
+          console.log("Giá Hủ tiếu gà: 20K");
+        } else {
+          console.log("Không có loại Hủ tiếu này");
+        }
+      } else {
+        if (nhapMonAn == "Mì quảng") {
+          let loaiMiquang = prompt(
+            "Nhập loại Mì quảng là Bò hoặc Gà hoặc Chả",
+            "Bò"
+          );
+          if (loaiMiquang == "Bò") {
+            console.log("Giá Mì quảng bò: 20K");
+          } else {
+            if (loaiMiquang == "Gà") {
+              console.log("Giá Mì quảng gà: 25K");
+            }
+            if (loaiMiquang == "Chả") {
+              console.log("Giá Mì quảng chả: 30K");
+            } else {
+              alert("Không có loại Mì quảng này");
+            }
+          }
+        } else {
+          alert("Không có loại Món ăn này");
+        }
+      }
+    </script>
+  </body>
+</html>
